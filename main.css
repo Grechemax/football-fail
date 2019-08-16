@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    background-image: url('img/main-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 4517px;
+    /* ?????????????*/
+}
+
+.logo-container img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    /*    min-height: 333px;*/
+    margin-top: -50px;
+}
+
+.content {
+    max-width: 1022px;
+    display: block;
+    background-image: url('img/back%20content.png');
+    background-repeat: no-repeat;
+    /*    background-position: ;*/
+    background-size: 100% 100%;
+    min-height: 3983px;
+    /* ?????????????*/
+    margin: 0 auto;
+    margin-top: -12%;
+    padding-top: 30px;
+    padding-bottom: 5%px;
+}
+
+.slides {
+    padding: 0;
+}
+
+.bottom {
+    margin: -50px auto 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.club2018 {
+    background-image: url('img/back%20rectangle.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+    max-width: 988px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.club2018 img {
+    min-width: 48%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.club2018 p {
+    color: white;
+    font-size: 18pt;
+    display: block;
+    margin: 0;
+    max-width: 50%;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.club2018::after {
+    content: url('img/triangle.png');
+    position: absolute;
+    bottom: -28px;
+    left: 48%;
+}
+
+.game-parag {
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.32ex;
+}
+
+
+/* ?????????????*/
+
+.game-features-container>div {
+    margin: 0 auto;
+    max-width: 988px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.item3,
+.item1 {
+    flex-wrap: wrap-reverse;
+}
+
+.item2,
+.item4 {
+    flex-wrap: wrap;
+}
+
+.game-features-text p {
+    font-size: 24pt;
+    text-transform: uppercase;
+    color: white;
+}
+
+.game-features-text ul {
+    color: #87bae0;
+    font-size: 20pt;
+    list-style-image: url('img/li_style.png');
+}
+
+.content>p {
+    color: white;
+    max-width: 988px;
+    margin: 30px auto 0 auto;
+    font-size: 20pt;
+    padding: 0 28px 0 28px;
+}
+
+hr {
+    border: none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    opacity: 0.5;
+    border-bottom: 2px solid #343c44;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+.content>h4 {
+    display: block;
+    color: white;
+    max-width: 988px;
+    text-align: center;
+    font-size: 30pt;
+    text-transform: uppercase;
+    letter-spacing: 0.32ex;
+}
+
+footer {
+    min-height: 130px;
+}
+
+footer p {
+    font-size: 20pt;
+    color: white;
+    padding: 5% 1% 5% 1%;
+}
+
+
+/*
+ * jQuery FlexSlider v2.6.3
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+
+@font-face {
+    font-family: 'flexslider-icon';
+    src: url('fonts/flexslider-icon.eot');
+    src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+
+.flex-container a:hover,
+.flex-slider a:hover {
+    outline: none;
+}
+
+.slides,
+.slides>li,
+.flex-control-nav,
+.flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+
+.flexslider {
+    margin: 0;
+    padding: 0;
+}
+
+.flexslider .slides>li {
+    display: none;
+    -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: block;
+}
+
+.flexslider .slides:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+    display: block;
+}
+
+* html .flexslider .slides {
+    height: 1%;
+}
+
+.no-js .flexslider .slides>li:first-child {
+    display: block;
+}
+
+
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+
+.flexslider {
+    margin: 0 auto;
+    max-width: 990px;
+    height: auto;
+    position: relative;
+    zoom: 1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flexslider .slides {
+    zoom: 1;
+}
+
+.flexslider .slides img {
+    height: auto;
+    -moz-user-select: none;
+}
+
+.flex-viewport {
+    max-height: 2000px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+    max-height: 300px;
+}
+
+.carousel li {
+    margin-right: 5px;
+}
+
+.flex-direction-nav {
+    *height: 0;
+}
+
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    width: 67px;
+    height: 57px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a:before {
+    font-family: "flexslider-icon";
+    font-size: 40px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.flex-direction-nav .flex-prev {
+    left: 50px;
+    background: url(img/left.png) no-repeat 0 0;
+}
+
+.flex-direction-nav .flex-next {
+    right: 50px;
+    text-align: right;
+    background: url(img/right.png) no-repeat 0 0;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+    opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 0.7;
+    right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+    opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+    opacity: 0!important;
+    filter: alpha(opacity=0);
+    cursor: default;
+    z-index: -1;
+}
+
+.flex-pauseplay a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    opacity: 0.8;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    color: #000;
+}
+
+.flex-pauseplay a:before {
+    font-family: "flexslider-icon";
+    font-size: 20px;
+    display: inline-block;
+}
+
+.flex-pauseplay a:hover {
+    opacity: 1;
+}
+
+.flex-pauseplay a.flex-play:before {}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+}
+
+.flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.flex-control-paging li a {
+    width: 20px;
+    height: 20px;
+    border: 3px solid grey;
+    padding: 2px;
+    display: block;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.flex-control-paging li a:hover {
+    background: #333;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: default;
+    border: 3px solid grey;
+}
+
+.flex-control-thumbs {
+    margin: 5px 0 0;
+    position: static;
+    overflow: hidden;
+}
+
+.flex-control-thumbs li {
+    width: 25%;
+    float: left;
+    margin: 0;
+}
+
+.flex-control-thumbs img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: .7;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.flex-control-thumbs img:hover {
+    opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+    opacity: 1;
+    cursor: default;
+}
+
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 960px) {
+    .club2018 p {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+    .bottom {
+        margin: -30px auto 0 auto;
+    }
+}
